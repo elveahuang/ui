@@ -1,0 +1,14 @@
+{
+    "name": "@commons/webapp",
+    "version": "24.1.0",
+    "dependencies": {
+        "vue": "^3.4.31"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.19",
+        "postcss": "^8.4.39",
+        "sass": "^1.77.6",
+        "tailwindcss": "^3.4.4",
+        "vue-cropper": "^1.1.1"
+    }
+}

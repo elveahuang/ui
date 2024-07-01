@@ -1,0 +1,37 @@
+{
+    "name": "@apps/webapp",
+    "version": "24.1.0",
+    "private": true,
+    "scripts": {
+        "start:dev": "vite --mode development",
+        "start:pro": "vite --mode production",
+        "start:github": "vite --mode github",
+        "start:vercel": "vite --mode vercel",
+        "build:dev": "vite build --mode development",
+        "build:pro": "vite build --mode production",
+        "build:github": "vite build --mode github",
+        "build:vercel": "vite build --mode vercel"
+    },
+    "dependencies": {
+        "vue": "^3.4.31"
+    },
+    "devDependencies": {
+        "@capacitor/cli": "^6.1.0",
+        "@intlify/unplugin-vue-i18n": "^4.0.0",
+        "@types/node": "^20.14.9",
+        "@vitejs/plugin-vue": "^5.0.5",
+        "@vitejs/plugin-vue-jsx": "^4.0.0",
+        "autoprefixer": "^10.4.19",
+        "postcss": "^8.4.39",
+        "sass": "^1.77.6",
+        "stylelint": "^16.6.1",
+        "tailwindcss": "^3.4.4",
+        "typescript": "^5.5.2",
+        "unplugin-auto-import": "^0.17.6",
+        "unplugin-icons": "^0.19.0",
+        "unplugin-vue-components": "^0.27.2",
+        "vite": "^5.3.2",
+        "vite-plugin-vconsole": "^2.1.1",
+        "vite-tsconfig-paths": "^4.3.2"
+    }
+}
