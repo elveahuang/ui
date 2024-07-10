@@ -1,1 +1,0 @@
-import{_ as e,b as t,f as c,j as o}from"./index-Qs-m6FH0.js";const s={},r=o("div",{class:"text-center"},"WeWork",-1),n=[r];function _(a,d){return t(),c("div",null,n)}const i=e(s,[["render",_]]);export{i as default};
