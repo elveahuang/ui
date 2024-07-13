@@ -1,1 +1,0 @@
-import{_ as e,b as t,f as s,j as c}from"./index-_ChEeD4x.js";const o={},r=c("div",{class:"text-center"},"WeWork",-1),n=[r];function _(a,d){return t(),s("div",null,n)}const f=e(o,[["render",_]]);export{f as default};
