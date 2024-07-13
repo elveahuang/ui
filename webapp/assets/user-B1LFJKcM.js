@@ -1,0 +1,1 @@
+import{x as s,ap as t}from"./index-BkbZb9nT.js";const c=t.auth.user.type==="account"?"/api/v1/account/save":"/api/v1/user/save",n=a=>s(c,a),e=t.auth.user.type==="account"?"/api/v1/account/change-password":"/api/v1/user/change-password",p=a=>s(e,a);export{p as c,n as u};
