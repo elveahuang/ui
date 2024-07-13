@@ -1,0 +1,1 @@
+import{_ as r,b as s,e as a,w as o,j as n,t as c,U as _}from"./index-DK77k7SO.js";/* empty css                */const i={};function l(e,d){const t=_;return s(),a(t,{shadow:"never"},{title:o(()=>[n("div",null,c(e.$t("common.user_pages_user_center_title")),1)]),_:1})}const f=r(i,[["render",l]]);export{f as default};
