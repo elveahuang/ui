@@ -1,1 +1,0 @@
-import{_ as e,b as t,f as c,j as s}from"./index-DK77k7SO.js";const o={},n=s("div",{class:"text-center"},"WeWork",-1),r=[n];function a(_,d){return t(),c("div",null,r)}const i=e(o,[["render",a]]);export{i as default};
