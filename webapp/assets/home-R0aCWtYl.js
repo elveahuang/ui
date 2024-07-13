@@ -1,1 +1,0 @@
-import{_ as e,b as t,f as c,j as o}from"./index-CglYQCU3.js";const s={},n=o("div",{class:"text-center"},"Home",-1),r=[n];function _(a,d){return t(),c("div",null,r)}const i=e(s,[["render",_]]);export{i as default};
