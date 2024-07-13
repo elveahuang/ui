@@ -1,0 +1,1 @@
+import{d as s,u as c,a as n,e as u,g as p}from"./index-C0URA0wu.js";const l=s({__name:"redirect",setup(_){const e=c(),t=n(),{params:o,query:r}=e,{path:a}=o;return t.replace({path:"/"+a,query:r}),(m,d)=>(u(),p("div"))}});export{l as default};
