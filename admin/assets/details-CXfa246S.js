@@ -1,1 +1,0 @@
-import{_ as t,e as a,f as o,ar as c}from"./index-DN2GvKgD.js";const r={};function _(e,s){const n=c;return a(),o(n,{title:e.$t("common.announcement_management")},null,8,["title"])}const m=t(r,[["render",_]]);export{m as default};
