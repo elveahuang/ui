@@ -1,0 +1,1 @@
+import{_ as e,b as t,f as c,j as s}from"./index-krri4l2f.js";const o={},r=s("div",{class:"text-center"},"WeWork",-1),n=[r];function a(_,d){return t(),c("div",null,n)}const f=e(o,[["render",a]]);export{f as default};
