@@ -2,6 +2,6 @@
     "name": "@commons/core",
     "version": "24.1.0",
     "dependencies": {
-        "vue": "^3.5.10"
+        "vue": "^3.5.11"
     }
 }
