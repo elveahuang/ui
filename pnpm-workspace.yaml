@@ -1,0 +1,13 @@
+packages:
+    - apps/*
+    - commons/*
+    - docs
+onlyBuiltDependencies:
+    - '@capacitor/background-runner'
+    - '@parcel/watcher'
+    - core-js
+    - core-js-pure
+    - es5-ext
+    - esbuild
+    - sharp
+    - vue-demi
