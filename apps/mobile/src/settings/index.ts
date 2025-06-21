@@ -3,7 +3,7 @@ import { extend } from '@/settings/extend.ts';
 import { useI18nExternal } from '@commons/core/i18n';
 import { Application, Settings, Tab } from '@commons/core/settings/mobile';
 import { getAppCopyright, getAppLogo, getAppTitle, getAppVersion } from '@commons/core/utils';
-import { isEmpty } from 'radash';
+import { isEmpty } from 'es-toolkit/compat';
 
 export const settings: Settings = {
     app: {

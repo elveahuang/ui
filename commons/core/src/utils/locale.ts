@@ -1,4 +1,4 @@
-import { isEmpty } from 'radash';
+import { isEmpty } from 'es-toolkit/compat';
 
 /**
  * 语言枚举

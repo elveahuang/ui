@@ -4,7 +4,7 @@ import BrowserService from '@commons/core/services/browser.service';
 import PlatformService from '@commons/core/services/platform.serviice';
 import { R } from '@commons/core/types';
 import { log, removeQueryParams, replaceString } from '@commons/core/utils';
-import { isEmpty } from 'radash';
+import { isEmpty } from 'es-toolkit/compat';
 
 declare let wx: any;
 

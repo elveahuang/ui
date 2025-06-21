@@ -1,5 +1,5 @@
 import { Key, PageParams, PageResult, R } from '@commons/core/types/common';
-import { isEmpty, isFunction } from 'radash';
+import { isEmpty, isFunction } from 'es-toolkit/compat';
 
 export class DataTableState<T = any> {
     tableSelectedRowKeys: Key[];

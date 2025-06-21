@@ -1,8 +1,8 @@
 import VueI18n from '@intlify/unplugin-vue-i18n/vite';
 import tailwindcss from '@tailwindcss/vite';
 import vue from '@vitejs/plugin-vue';
+import { isEqual } from 'es-toolkit/compat';
 import { resolve } from 'path';
-import { isEqual } from 'radash';
 import rollupCopy from 'rollup-plugin-copy';
 import AutoImport from 'unplugin-auto-import/vite';
 import IconsResolver from 'unplugin-icons/resolver';

@@ -8,7 +8,7 @@
 import { useDark } from '@commons/core/hooks/useDark';
 import { useAppStore } from '@commons/core/store';
 import { DarkMode, darkModes, DarkModeType, getDarkMode, getDarkModeLabel } from '@commons/core/utils/dark';
-import { isArray } from 'radash';
+import { isArray } from 'es-toolkit/compat';
 import { PickerConfirmEventParams } from 'vant';
 import { computed, Ref, ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';

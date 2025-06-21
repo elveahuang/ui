@@ -15,7 +15,7 @@
 import { useLocale } from '@commons/core/hooks/useLocale';
 import { VIcon } from '@commons/core/utils';
 import { getLocale, locales } from '@commons/core/utils/locale';
-import { isArray } from 'radash';
+import { isArray } from 'es-toolkit/compat';
 import { PickerConfirmEventParams } from 'vant';
 import { ref } from 'vue';
 

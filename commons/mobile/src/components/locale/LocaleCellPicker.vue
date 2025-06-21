@@ -9,7 +9,7 @@
 import { useLocale } from '@commons/core/hooks/useLocale';
 import { useAppStore } from '@commons/core/store';
 import { getLocale, getLocaleLabel, locales } from '@commons/core/utils/locale';
-import { isArray } from 'radash';
+import { isArray } from 'es-toolkit/compat';
 import { PickerConfirmEventParams } from 'vant';
 import { computed, ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';

@@ -1,7 +1,7 @@
 import { AttachmentApi } from '@commons/core/api/attachment.ts';
 import { R } from '@commons/core/types';
 import { AttachmentEntity } from '@commons/core/types/attachment.type.ts';
-import { isEmpty } from 'radash';
+import { isEmpty } from 'es-toolkit/compat';
 
 /**
  * 附件服务

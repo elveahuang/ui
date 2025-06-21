@@ -10,7 +10,7 @@ import { HttpConfig, setupHttp } from '@commons/core/utils/http.ts';
 import { Locale } from '@commons/core/utils/locale';
 import { setupDotLottie } from '@commons/core/utils/lottie.ts';
 import { defaultTheme, getThemeType, setTheme, Theme, ThemeType } from '@commons/core/utils/theme.ts';
-import { isFunction } from 'radash';
+import { isFunction } from 'es-toolkit/compat';
 import {
     ConfigProvider,
     ConfigProviderTheme,

@@ -40,10 +40,9 @@
 </template>
 
 <script setup lang="ts">
-import { Key } from '@commons/core/types';
+import { Key } from '@commons/core/types/common';
 import { log } from '@commons/core/utils';
 import { DataTable, DataTableState } from '@commons/core/utils/data-table';
-import { snake } from 'radash';
 import { computed, onMounted } from 'vue';
 
 const emits = defineEmits(['getDataList']);
@@ -124,7 +123,7 @@ const onTableChange = (page: { pageSize: number; current: number }, filters: any
     table.pagination.size = page.pageSize;
     table.pagination.page = page.current;
     if (sorter) {
-        table.sort.property = snake(sorter.field);
+        table.sort.property = sorter.field;
         table.sort.order = sorter.order === 'ascend' ? 'asc' : 'desc';
     }
     emits('getDataList');

@@ -5,7 +5,7 @@ import { useI18nExternal } from '@commons/core/i18n';
 import { router } from '@commons/core/router';
 import { Credentials } from '@commons/core/types/user';
 import { getYear } from '@commons/core/utils/date';
-import { isEmpty } from 'radash';
+import { isEmpty } from 'es-toolkit/compat';
 
 export { Icon as VIcon } from '@iconify/vue';
 

@@ -1,5 +1,5 @@
 import CryptoJS from 'crypto-js';
-import { trim } from 'radash';
+import { trim } from 'es-toolkit/compat';
 
 const KEY = '1234567812345678';
 const IV = '1234567812345678';

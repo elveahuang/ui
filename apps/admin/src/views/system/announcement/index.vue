@@ -122,7 +122,7 @@ import { AppDateRangePicker, AppIcon, AppPageHeader, AppTable } from '@commons/w
 import { showMessage } from '@commons/webapp/utils';
 import { editorNotEmpty } from '@commons/webapp/utils/validation.ts';
 import type { FormInstance, FormRules } from 'element-plus';
-import { isEmpty } from 'radash';
+import { isEmpty } from 'es-toolkit/compat';
 import { onMounted, reactive, Ref, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 

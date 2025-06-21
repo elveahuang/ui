@@ -15,7 +15,7 @@
 import { useTheme } from '@commons/core/hooks/useTheme';
 import { VIcon } from '@commons/core/utils';
 import { getTheme, Theme, themes, ThemeType } from '@commons/core/utils/theme';
-import { isArray } from 'radash';
+import { isArray } from 'es-toolkit/compat';
 import { PickerConfirmEventParams } from 'vant';
 import { Ref, ref } from 'vue';
 

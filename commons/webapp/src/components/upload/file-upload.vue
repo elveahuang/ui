@@ -29,7 +29,7 @@ import { AttachmentEntity, AttachmentFileEntity, AttachmentType } from '@commons
 import { CusFile } from '@commons/core/types/upload.ts';
 import { log } from '@commons/core/utils';
 import { UploadProps } from 'element-plus';
-import { isEmpty } from 'radash';
+import { isEmpty } from 'es-toolkit/compat';
 import { computed, onMounted } from 'vue';
 
 const emits = defineEmits(['update:attachment']);

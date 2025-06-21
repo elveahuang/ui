@@ -1,4 +1,4 @@
-import { isEmpty } from 'radash';
+import { isEmpty } from 'es-toolkit/compat';
 
 export const ACCESS_TOKEN_KEY: string = 'ACCESS_TOKEN';
 

@@ -1,6 +1,6 @@
 import { log } from '@commons/core/utils';
 import { canAccessRoute, setupAuth } from '@commons/core/utils/auth';
-import { isArray, isEmpty, isEqual } from 'radash';
+import { isArray, isEmpty, isEqual } from 'es-toolkit/compat';
 import { App } from 'vue';
 import { RouteRecordRaw, createRouter, createWebHashHistory, createWebHistory } from 'vue-router';
 

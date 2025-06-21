@@ -1,5 +1,5 @@
 import { PageParams, PageResult, R } from '@commons/core/types';
-import { isFunction } from 'radash';
+import { isFunction } from 'es-toolkit/compat';
 
 export class DataList {
     refreshing: boolean = false;

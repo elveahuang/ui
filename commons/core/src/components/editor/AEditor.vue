@@ -11,7 +11,7 @@ import { getEditorOptions } from '@commons/core/utils/editor';
 import { Locale } from '@commons/core/utils/locale';
 import { AiEditor, AiEditorOptions } from 'aieditor';
 import 'aieditor/dist/style.css';
-import { isEqual } from 'radash';
+import { isEqual } from 'es-toolkit/compat';
 import { computed, onBeforeUnmount, onMounted, ref, shallowRef, watch } from 'vue';
 
 const emits = defineEmits(['update:value']);

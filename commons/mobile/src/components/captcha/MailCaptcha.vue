@@ -7,7 +7,7 @@
 <script setup lang="ts">
 import { getEmailCaptchaApi } from '@commons/core/api/captcha.ts';
 import { log } from '@commons/core/utils';
-import { isEmpty } from 'radash';
+import { isEmpty } from 'es-toolkit/compat';
 import { showDialog } from 'vant';
 import { onMounted, ref } from 'vue';
 import { useI18n } from 'vue-i18n';

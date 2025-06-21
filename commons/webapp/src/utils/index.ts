@@ -18,7 +18,7 @@ import type { Language } from 'element-plus/es/locale';
 import enUs from 'element-plus/es/locale/lang/en';
 import zhCn from 'element-plus/es/locale/lang/zh-cn';
 import zhTw from 'element-plus/es/locale/lang/zh-tw';
-import { isFunction } from 'radash';
+import { isFunction } from 'es-toolkit/compat';
 import { App } from 'vue';
 
 export const toast = async (content: string): Promise<void> => {

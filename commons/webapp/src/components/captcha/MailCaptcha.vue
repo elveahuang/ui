@@ -8,7 +8,7 @@
 import { getEmailCaptchaApi } from '@commons/core/api/captcha.ts';
 import { log } from '@commons/core/utils';
 import { ElMessageBox } from 'element-plus';
-import { isEmpty } from 'radash';
+import { isEmpty } from 'es-toolkit/compat';
 import { createVNode, onMounted, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 

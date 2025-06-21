@@ -2,7 +2,7 @@ import { useAppStoreExternal } from '@commons/core/store';
 import { log } from '@commons/core/utils';
 import { setHtmlLang } from '@commons/core/utils/html';
 import { locales, LocaleType } from '@commons/core/utils/locale';
-import { isFunction } from 'radash';
+import { isFunction } from 'es-toolkit/compat';
 import { App } from 'vue';
 import type { I18nOptions } from 'vue-i18n';
 import { createI18n } from 'vue-i18n';

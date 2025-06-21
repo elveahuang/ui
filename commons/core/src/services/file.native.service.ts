@@ -4,7 +4,7 @@ import { R } from '@commons/core/types';
 import { AttachmentFileEntity } from '@commons/core/types/attachment.type.ts';
 import { FileData } from '@commons/core/types/file-data.model.ts';
 import { FilePayload } from '@commons/core/types/file-payload.model.ts';
-import { isEmpty } from 'radash';
+import { isEmpty } from 'es-toolkit/compat';
 
 /**
  * 本地文件服务

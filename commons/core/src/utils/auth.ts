@@ -2,7 +2,7 @@ import { usePageLoading } from '@commons/core/hooks';
 import { whiteList } from '@commons/core/router';
 import { useUserStore } from '@commons/core/store';
 import { log } from '@commons/core/utils';
-import { isArray, isEmpty, isString } from 'radash';
+import { isArray, isEmpty, isString } from 'es-toolkit/compat';
 import { App } from 'vue';
 import { NavigationGuardNext, RouteLocationNormalized, Router } from 'vue-router';
 

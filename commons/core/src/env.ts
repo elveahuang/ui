@@ -1,5 +1,5 @@
 import { dingtalkOAuthUrl, larkOAuthUrl, weChatOAuthUrl, weComOAuthUrl } from '@commons/core/constants';
-import { isEmpty, isEqual } from 'radash';
+import { isEmpty, isEqual } from 'es-toolkit/compat';
 
 declare type Environment = {
     /**

@@ -3,7 +3,7 @@ import { R } from '@commons/core/types';
 import { log } from '@commons/core/utils';
 import { InternalRuleItem } from 'async-validator';
 import { FormRules as Rule } from 'element-plus';
-import { isEmpty } from 'radash';
+import { isEmpty } from 'es-toolkit/compat';
 
 export declare type CheckUsernamePayload = {
     id: number;
