@@ -1,5 +1,5 @@
 import { env } from '@commons/core/env';
-import { ChatInit, convertToModelMessages, createIdGenerator, TextStreamChatTransport, UIMessage, UseCompletionOptions } from 'ai';
+import { ChatInit, TextStreamChatTransport, UIMessage, UseCompletionOptions } from 'ai';
 
 export type PrepareRequestPayload = {
     body: object;
@@ -17,14 +17,13 @@ export type PrepareRequestOptions = {
 };
 
 export const defaultUseChatOptions: ChatInit<UIMessage> = {
-    generateId: createIdGenerator({ prefix: 'msgc', size: 16 }),
     transport: new TextStreamChatTransport({
         api: `${env.server}/api/v1/ai/chat`,
-        prepareSendMessagesRequest: (options: PrepareRequestOptions): PrepareRequestPayload => {
+        prepareSendMessagesRequest: ({ messages, id }: PrepareRequestOptions): PrepareRequestPayload => {
             return {
                 body: {
-                    id: options.id,
-                    messages: convertToModelMessages(options.messages),
+                    prompt: getText(messages[messages.length - 1]),
+                    conversationId: id,
                 },
             };
         },
@@ -35,3 +34,7 @@ export const defaultUseCompletionOptions: UseCompletionOptions = {
     api: `${env.server}/api/v1/ai/chat/completion`,
     streamProtocol: 'text',
 };
+
+export function getText(message: UIMessage): string {
+    return message.parts.map((part): string => (part.type === 'text' ? part.text : '')).join('');
+}
