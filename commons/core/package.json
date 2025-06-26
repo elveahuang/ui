@@ -2,7 +2,7 @@
     "name": "@commons/core",
     "version": "25.1.0",
     "dependencies": {
-        "tailwindcss": "^4.1.10",
+        "tailwindcss": "^4.1.11",
         "vue": "^3.5.17"
     }
 }
