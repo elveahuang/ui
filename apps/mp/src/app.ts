@@ -1,8 +1,8 @@
-import { createApp } from 'vue';
+import { createApp, App as VueApp } from 'vue';
 import './app.css';
 
-const App = createApp({
-    onShow() {},
+const App: VueApp<Element> = createApp({
+    onShow(): void {},
 });
 
 export default App;

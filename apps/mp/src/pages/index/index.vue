@@ -10,6 +10,7 @@ import { ref } from 'vue';
 
 const show = ref(false);
 const onClick = () => {
+    console.log('click');
     show.value = true;
 };
 </script>

@@ -16,7 +16,7 @@
 <script setup lang="ts">
 import { log, VIcon } from '@commons/core/utils';
 import { DataList, initialize } from '@commons/core/utils/data-list';
-import { onMounted } from 'vue';
+import { onMounted, reactive } from 'vue';
 
 const emits = defineEmits(['getDataList', 'resetData', 'cleanDataList']);
 const props = defineProps({
