@@ -38,24 +38,28 @@
         "@vant/weapp": "^1.11.7",
         "axios": "^1.10.0",
         "pinia": "^3.0.3",
-        "tailwindcss": "^4.1.11",
         "vue": "^3.5.17",
         "vue-router": "^4.5.1"
     },
     "devDependencies": {
         "@babel/core": "^7.28.0",
-        "@tailwindcss/postcss": "^4.1.11",
+        "@babel/plugin-proposal-class-properties": "^7.18.6",
         "@tarojs/cli": "^4.1.4",
-        "@tarojs/vite-runner": "^4.1.4",
-        "@vitejs/plugin-vue": "^4.6.2",
-        "@vitejs/plugin-vue-jsx": "^3.1.0",
+        "@tarojs/webpack5-runner": "^4.1.4",
+        "@types/webpack-env": "^1.18.8",
+        "@vue/babel-plugin-jsx": "^1.4.0",
+        "@vue/compiler-sfc": "^3.5.17",
         "babel-preset-taro": "^4.1.4",
+        "css-loader": "^7.1.2",
         "postcss": "^8.5.6",
-        "terser": "^5.43.1",
+        "style-loader": "^4.0.0",
+        "tsconfig-paths-webpack-plugin": "^4.2.0",
         "typescript": "^5.8.3",
         "unplugin-vue-components": "^28.8.0",
-        "vite": "^4.5.13",
-        "vite-tsconfig-paths": "^5.1.4"
+        "webpack": "^5.100.2"
+    },
+    "peerDependencies": {
+        "webpack": "^5.100.2"
     },
     "packageManager": "pnpm@10.13.1"
 }

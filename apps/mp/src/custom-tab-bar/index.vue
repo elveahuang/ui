@@ -1,6 +1,6 @@
 <template>
     <cover-view class="tab-bar">
-        <cover-view class="tab-bar-border"></cover-view>
+        <cover-view class="tab-bar-border">AAA</cover-view>
         <cover-view v-for="(item, index) in list" :key="index" class="tab-bar-item" @tap="switchTab(index, item.pagePath)">
             <cover-image :src="selected === index ? item.selectedIconPath : item.iconPath" />
             <cover-view :style="{ color: selected === index ? selectedColor : color }">{{ item.text }}</cover-view>
@@ -8,20 +8,15 @@
     </cover-view>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { CoverImage, CoverView } from '@tarojs/components';
 import Taro from '@tarojs/taro';
-const selected = ref(0);
+import { ref } from 'vue';
 
+const selected = ref(0);
 const color = '#000000';
 const selectedColor = '#DC143C';
 const list = [
-    {
-        pagePath: '/pages/index/index',
-        selectedIconPath: '../images/tabbar_home_on.png',
-        iconPath: '../images/tabbar_home.png',
-        text: 'index',
-    },
     {
         pagePath: '/pages/home/index',
         selectedIconPath: '../images/tabbar_cart_on.png',
@@ -29,24 +24,18 @@ const list = [
         text: 'home',
     },
     {
-        pagePath: '/pages/about/index',
+        pagePath: '/pages/me/index',
         selectedIconPath: '../images/tabbar_my_on.png',
         iconPath: '../images/tabbar_my.png',
-        text: 'about',
+        text: 'me',
     },
 ];
 
-function switchTab(index, url) {
+function switchTab(index: number, url: string) {
+    console.log(index);
+    selected.value = index;
     Taro.switchTab({ url });
 }
-</script>
-
-<script lang="ts">
-export default {
-    options: {
-        addGlobalClass: true,
-    },
-};
 </script>
 
 <style lang="css">

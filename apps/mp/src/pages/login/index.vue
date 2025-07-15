@@ -1,6 +1,6 @@
 <template>
     <View class="index">
-        <div class="text-center">Index</div>
+        <div class="text-center">login</div>
     </View>
 </template>
 

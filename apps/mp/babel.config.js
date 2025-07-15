@@ -7,7 +7,7 @@ module.exports = {
             {
                 framework: 'vue3',
                 ts: true,
-                compiler: 'vite',
+                compiler: 'webpack5',
             },
         ],
     ],

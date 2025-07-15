@@ -1,12 +1,10 @@
 import { defineConfig, type UserConfigExport } from '@tarojs/cli';
-import { resolve } from 'path';
-import Components from 'unplugin-vue-components/vite';
-import tsconfigPaths from 'vite-tsconfig-paths';
+import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
 import devConfig from './dev';
 import prodConfig from './prod';
 
-export default defineConfig<'vite'>(async (merge): Promise<object> => {
-    const baseConfig: UserConfigExport<'vite'> = {
+export default defineConfig<'webpack5'>(async (merge): Promise<object> => {
+    const baseConfig: UserConfigExport<'webpack5'> = {
         projectName: 'mp',
         date: '2025-1-1',
         designWidth(): number {
@@ -28,14 +26,7 @@ export default defineConfig<'vite'>(async (merge): Promise<object> => {
         },
         framework: 'vue3',
         compiler: {
-            type: 'vite',
-            vitePlugins: [
-                Components({
-                    resolvers: [],
-                    dts: resolve(__dirname, '../src/types/components.d.ts'),
-                }),
-                tsconfigPaths(),
-            ],
+            type: 'webpack5',
         },
         mini: {
             postcss: {
@@ -50,6 +41,9 @@ export default defineConfig<'vite'>(async (merge): Promise<object> => {
                         generateScopedName: '[name]__[local]___[hash:base64:5]',
                     },
                 },
+            },
+            webpackChain(chain) {
+                chain.resolve.plugin('tsconfig-paths').use(TsconfigPathsPlugin);
             },
         },
         h5: {
@@ -72,6 +66,9 @@ export default defineConfig<'vite'>(async (merge): Promise<object> => {
                         generateScopedName: '[name]__[local]___[hash:base64:5]',
                     },
                 },
+            },
+            webpackChain(chain) {
+                chain.resolve.plugin('tsconfig-paths').use(TsconfigPathsPlugin);
             },
         },
     };

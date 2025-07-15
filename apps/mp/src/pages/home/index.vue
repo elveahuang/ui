@@ -6,4 +6,9 @@
 
 <script lang="ts" setup>
 import { View } from '@tarojs/components';
+import { useDidShow } from '@tarojs/taro';
+
+useDidShow(() => {
+    console.log('useDidShow');
+});
 </script>
