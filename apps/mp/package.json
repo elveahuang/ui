@@ -3,7 +3,7 @@
     "version": "25.1.0",
     "private": true,
     "scripts": {
-        "build:weapp": "taro build --type weapp",
+        "build:weapp": "cross-env NODE_ENV=production taro build --type weapp",
         "build:swan": "taro build --type swan",
         "build:alipay": "taro build --type alipay",
         "build:tt": "taro build --type tt",
@@ -11,7 +11,7 @@
         "build:rn": "taro build --type rn",
         "build:qq": "taro build --type qq",
         "build:quickapp": "taro build --type quickapp",
-        "start:weapp": "taro build --type weapp --watch",
+        "start:weapp": "cross-env NODE_ENV=production taro build --type weapp --watch",
         "start:web": "taro build --type h5 --watch",
         "dev:swan": "npm run build:swan -- --watch",
         "dev:alipay": "npm run build:alipay -- --watch",
@@ -23,6 +23,7 @@
     },
     "dependencies": {
         "@babel/runtime": "^7.27.6",
+        "@nutui/icons-vue-taro": "^0.0.9",
         "@nutui/nutui-taro": "^4.3.13",
         "@nutui/touch-emulator": "^1.0.0",
         "@tarojs/components": "^4.1.4",
@@ -40,11 +41,13 @@
         "@tarojs/runtime": "^4.1.4",
         "@tarojs/shared": "^4.1.4",
         "@tarojs/taro": "^4.1.4",
-        "vue": "3.5.17"
+        "tailwindcss": "^4.1.11",
+        "vue": "^3.5.17"
     },
     "devDependencies": {
         "@babel/core": "^7.28.0",
         "@nutui/auto-import-resolver": "^1.0.0",
+        "@tailwindcss/postcss": "^4.1.11",
         "@tarojs/cli": "^4.1.4",
         "@tarojs/vite-runner": "^4.1.4",
         "@vitejs/plugin-vue": "^4.6.2",

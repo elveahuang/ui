@@ -1,7 +1,9 @@
 <template>
     <view class="index">
-        <nut-button type="primary" @click="onClick">按钮</nut-button>
-        <nut-toast v-model:visible="show" msg="你成功了" />
+        <div class="text-center">
+            <button class="text-center" @click="onClick">Show</button>
+        </div>
+        <div v-if="show">Hello Taro</div>
     </view>
 </template>
 
@@ -11,6 +13,6 @@ import { ref } from 'vue';
 const show = ref(false);
 const onClick = () => {
     console.log('click');
-    show.value = true;
+    show.value = !show.value;
 };
 </script>
