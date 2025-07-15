@@ -1,21 +1,23 @@
 <template>
     <cover-view class="tab-bar">
-        <cover-view class="tab-bar-border">AAA</cover-view>
+        <cover-view class="tab-bar-border"></cover-view>
         <cover-view v-for="(item, index) in list" :key="index" class="tab-bar-item" @tap="switchTab(index, item.pagePath)">
-            <cover-image :src="selected === index ? item.selectedIconPath : item.iconPath" />
-            <cover-view :style="{ color: selected === index ? selectedColor : color }">{{ item.text }}</cover-view>
+            <cover-image :src="selectedIndex === index ? item.selectedIconPath : item.iconPath" />
+            <cover-view :style="{ color: selectedIndex === index ? selectedColor : color }">{{ item.text }}</cover-view>
         </cover-view>
     </cover-view>
 </template>
 
 <script setup lang="ts">
+import { useAppStore } from '@/store';
 import { CoverImage, CoverView } from '@tarojs/components';
 import Taro from '@tarojs/taro';
-import { ref } from 'vue';
+import { computed } from 'vue';
 
-const selected = ref(0);
-const color = '#000000';
+const appStore = useAppStore();
+const selectedIndex = computed<number>(() => appStore.tabBar.index);
 const selectedColor = '#DC143C';
+const color = '#000000';
 const list = [
     {
         pagePath: '/pages/home/index',
@@ -31,9 +33,9 @@ const list = [
     },
 ];
 
-function switchTab(index: number, url: string) {
+async function switchTab(index: number, url: string) {
     console.log(index);
-    selected.value = index;
+    appStore.setTabBarIndex(index);
     Taro.switchTab({ url });
 }
 </script>

@@ -1,12 +1,13 @@
-import { defineStore } from 'pinia';
+import { useAppStore, useAppStoreExternal } from '@/store/app';
 
-export const useAppStore = defineStore('counter', {
-    state: () => {
-        return { count: 0 };
-    },
-    actions: {
-        increment() {
-            this.count++;
-        },
-    },
-});
+import { createPinia } from 'pinia';
+import type { App } from 'vue';
+
+export let store: ReturnType<typeof createPinia>;
+
+export const setupStore = async (app: App<Element>): Promise<void> => {
+    store = createPinia();
+    app.use(store);
+};
+
+export { useAppStore, useAppStoreExternal };
