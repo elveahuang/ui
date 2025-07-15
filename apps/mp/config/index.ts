@@ -1,4 +1,3 @@
-import NutUIResolver from '@nutui/auto-import-resolver';
 import { defineConfig, type UserConfigExport } from '@tarojs/cli';
 import { resolve } from 'path';
 import Components from 'unplugin-vue-components/vite';
@@ -6,15 +5,11 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 import devConfig from './dev';
 import prodConfig from './prod';
 
-// https://taro-docs.jd.com/docs/next/config#defineconfig-辅助函数
-export default defineConfig<'vite'>(async (merge, { command, mode }) => {
+export default defineConfig<'vite'>(async (merge): Promise<object> => {
     const baseConfig: UserConfigExport<'vite'> = {
         projectName: 'mp',
-        date: '2025-4-15',
-        designWidth(input: any) {
-            if (input?.file?.replace(/\\+/g, '/').indexOf('@nutui') > -1) {
-                return 375;
-            }
+        date: '2025-1-1',
+        designWidth(): number {
             return 750;
         },
         deviceRatio: {
@@ -36,7 +31,7 @@ export default defineConfig<'vite'>(async (merge, { command, mode }) => {
             type: 'vite',
             vitePlugins: [
                 Components({
-                    resolvers: [NutUIResolver({ taro: true })],
+                    resolvers: [],
                     dts: resolve(__dirname, '../src/types/components.d.ts'),
                 }),
                 tsconfigPaths(),
@@ -76,14 +71,6 @@ export default defineConfig<'vite'>(async (merge, { command, mode }) => {
                         namingPattern: 'module',
                         generateScopedName: '[name]__[local]___[hash:base64:5]',
                     },
-                },
-            },
-        },
-        rn: {
-            appName: 'taroDemo',
-            postcss: {
-                cssModules: {
-                    enable: false,
                 },
             },
         },
