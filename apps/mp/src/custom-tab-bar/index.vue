@@ -1,41 +1,55 @@
 <template>
     <cover-view class="tab-bar">
         <cover-view class="tab-bar-border"></cover-view>
-        <cover-view v-for="(item, index) in list" :key="index" class="tab-bar-item">
-            <cover-view>{{ item.text }}</cover-view>
+        <cover-view v-for="(item, index) in list" :key="index" class="tab-bar-item" @tap="switchTab(index, item.pagePath)">
+            <cover-image :src="selected === index ? item.selectedIconPath : item.iconPath" />
+            <cover-view :style="{ color: selected === index ? selectedColor : color }">{{ item.text }}</cover-view>
         </cover-view>
     </cover-view>
 </template>
 
-<script>
-import { CoverView } from '@tarojs/components';
-export default defineComponent({
+<script setup>
+import { CoverImage, CoverView } from '@tarojs/components';
+import Taro from '@tarojs/taro';
+const selected = ref(0);
+
+const color = '#000000';
+const selectedColor = '#DC143C';
+const list = [
+    {
+        pagePath: '/pages/index/index',
+        selectedIconPath: '../images/tabbar_home_on.png',
+        iconPath: '../images/tabbar_home.png',
+        text: 'index',
+    },
+    {
+        pagePath: '/pages/home/index',
+        selectedIconPath: '../images/tabbar_cart_on.png',
+        iconPath: '../images/tabbar_cart.png',
+        text: 'home',
+    },
+    {
+        pagePath: '/pages/about/index',
+        selectedIconPath: '../images/tabbar_my_on.png',
+        iconPath: '../images/tabbar_my.png',
+        text: 'about',
+    },
+];
+
+function switchTab(index, url) {
+    Taro.switchTab({ url });
+}
+</script>
+
+<script lang="ts">
+export default {
     options: {
         addGlobalClass: true,
     },
-    data() {
-        return {
-            list: [
-                {
-                    pagePath: 'pages/index/index',
-                    text: 'index',
-                },
-                {
-                    pagePath: 'pages/home/index',
-                    text: 'home',
-                },
-                {
-                    pagePath: 'pages/about/index',
-                    text: 'about',
-                },
-            ],
-        };
-    },
-    components: { CoverView },
-});
+};
 </script>
 
-<style lang="scss">
+<style lang="css">
 .tab-bar {
     position: fixed;
     bottom: 0;
