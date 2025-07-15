@@ -1,10 +1,10 @@
 import NutUIResolver from '@nutui/auto-import-resolver';
 import { defineConfig, type UserConfigExport } from '@tarojs/cli';
-import devConfig from './dev';
-import prodConfig from './prod';
-
 import { resolve } from 'path';
 import Components from 'unplugin-vue-components/vite';
+import tsconfigPaths from 'vite-tsconfig-paths';
+import devConfig from './dev';
+import prodConfig from './prod';
 
 // https://taro-docs.jd.com/docs/next/config#defineconfig-辅助函数
 export default defineConfig<'vite'>(async (merge, { command, mode }) => {
@@ -39,6 +39,7 @@ export default defineConfig<'vite'>(async (merge, { command, mode }) => {
                     resolvers: [NutUIResolver({ taro: true })],
                     dts: resolve(__dirname, '../src/types/components.d.ts'),
                 }),
+                tsconfigPaths(),
             ],
         },
         mini: {
