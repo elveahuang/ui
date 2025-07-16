@@ -1,5 +1,7 @@
+import NutUIResolver from '@nutui/auto-import-resolver';
 import { defineConfig, type UserConfigExport } from '@tarojs/cli';
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
+import ComponentsPlugin from 'unplugin-vue-components/webpack';
 import devConfig from './dev';
 import prodConfig from './prod';
 
@@ -44,6 +46,11 @@ export default defineConfig<'webpack5'>(async (merge): Promise<object> => {
             },
             webpackChain(chain) {
                 chain.resolve.plugin('tsconfig-paths').use(TsconfigPathsPlugin);
+                chain.plugin('unplugin-vue-components').use(
+                    ComponentsPlugin({
+                        resolvers: [NutUIResolver({ taro: true })],
+                    }),
+                );
             },
         },
         h5: {
@@ -69,6 +76,11 @@ export default defineConfig<'webpack5'>(async (merge): Promise<object> => {
             },
             webpackChain(chain) {
                 chain.resolve.plugin('tsconfig-paths').use(TsconfigPathsPlugin);
+                chain.plugin('unplugin-vue-components').use(
+                    ComponentsPlugin({
+                        resolvers: [NutUIResolver({ taro: true })],
+                    }),
+                );
             },
         },
     };
