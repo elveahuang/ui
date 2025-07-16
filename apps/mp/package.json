@@ -37,11 +37,11 @@
         "@tarojs/runtime": "^4.1.4",
         "@tarojs/shared": "^4.1.4",
         "@tarojs/taro": "^4.1.4",
-        "@vant/weapp": "^1.11.7",
         "axios": "^1.10.0",
         "es-toolkit": "^1.39.7",
         "pinia": "^3.0.3",
         "vue": "^3.5.17",
+        "vue-i18n": "^11.1.10",
         "vue-router": "^4.5.1"
     },
     "devDependencies": {
@@ -61,11 +61,16 @@
         "style-loader": "^4.0.0",
         "tsconfig-paths-webpack-plugin": "^4.2.0",
         "typescript": "^5.8.3",
+        "unplugin-auto-import": "^19.3.0",
+        "unplugin-icons": "^22.1.0",
         "unplugin-vue-components": "^28.8.0",
+        "vue-loader": "^17.4.2",
         "webpack": "^5.100.2"
     },
     "peerDependencies": {
-        "webpack": "^5.91.0"
+        "@vitejs/plugin-vue": "4.6.2",
+        "@vitejs/plugin-vue-jsx": "3.1.0",
+        "vite": "4.5.14"
     },
     "packageManager": "pnpm@10.13.1"
 }

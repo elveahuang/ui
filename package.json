@@ -179,8 +179,8 @@
         "vue-tsc": "^3.0.1"
     },
     "peerDependencies": {
-        "@tiptap/starter-kit": "^2.26.1",
-        "@tiptap/vue-3": "^2.26.1"
+        "@tiptap/starter-kit": "2.26.1",
+        "@tiptap/vue-3": "2.26.1"
     },
     "husky": {
         "hooks": {

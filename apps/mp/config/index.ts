@@ -1,6 +1,8 @@
 import NutUIResolver from '@nutui/auto-import-resolver';
 import { defineConfig, type UserConfigExport } from '@tarojs/cli';
+import { resolve } from 'path';
 import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin';
+import IconsPlugin from 'unplugin-icons/webpack';
 import ComponentsPlugin from 'unplugin-vue-components/webpack';
 import devConfig from './dev';
 import prodConfig from './prod';
@@ -9,7 +11,12 @@ export default defineConfig<'webpack5'>(async (merge): Promise<object> => {
     const baseConfig: UserConfigExport<'webpack5'> = {
         projectName: 'mp',
         date: '2025-1-1',
-        designWidth(): number {
+        designWidth(input: any): number {
+            // NutUI
+            if (input?.file?.replace(/\\+/g, '/').indexOf('@nutui') > -1) {
+                return 375;
+            }
+            // Taro
             return 750;
         },
         deviceRatio: {
@@ -20,7 +27,7 @@ export default defineConfig<'webpack5'>(async (merge): Promise<object> => {
         },
         sourceRoot: 'src',
         outputRoot: 'dist',
-        plugins: ['@tarojs/plugin-html'],
+        plugins: ['@tarojs/plugin-html', '@tarojs/plugin-http'],
         defineConstants: {},
         copy: {
             patterns: [],
@@ -49,8 +56,10 @@ export default defineConfig<'webpack5'>(async (merge): Promise<object> => {
                 chain.plugin('unplugin-vue-components').use(
                     ComponentsPlugin({
                         resolvers: [NutUIResolver({ taro: true })],
+                        dts: resolve(__dirname, '../src/types/components.d.ts'),
                     }),
                 );
+                chain.plugin('unplugin-icons').use(IconsPlugin({}));
             },
         },
         h5: {
@@ -79,8 +88,10 @@ export default defineConfig<'webpack5'>(async (merge): Promise<object> => {
                 chain.plugin('unplugin-vue-components').use(
                     ComponentsPlugin({
                         resolvers: [NutUIResolver({ taro: true })],
+                        dts: resolve(__dirname, '../src/types/components.d.ts'),
                     }),
                 );
+                chain.plugin('unplugin-icons').use(IconsPlugin({}));
             },
         },
     };
