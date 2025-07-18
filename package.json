@@ -32,7 +32,7 @@
         "prepare": "husky"
     },
     "dependencies": {
-        "@ai-sdk/vue": "2.0.0-beta.22",
+        "@ai-sdk/vue": "2.0.0-beta.24",
         "@capacitor/app-launcher": "^7.0.1",
         "@capacitor/background-runner": "^2.1.0",
         "@capacitor/barcode-scanner": "^2.0.3",
@@ -70,7 +70,7 @@
         "@vueuse/core": "^13.5.0",
         "@vueuse/rxjs": "^13.5.0",
         "@vueuse/shared": "^13.5.0",
-        "ai": "5.0.0-beta.21",
+        "ai": "5.0.0-beta.23",
         "aieditor": "^1.4.0",
         "async-validator": "^4.2.5",
         "axios": "^1.10.0",
@@ -150,7 +150,7 @@
         "prettier-plugin-organize-imports": "^4.1.0",
         "prettier-plugin-tailwindcss": "^0.6.14",
         "rollup-plugin-copy": "^3.5.0",
-        "stylelint": "^16.21.1",
+        "stylelint": "^16.22.0",
         "stylelint-config-html": "^1.1.0",
         "stylelint-config-recess-order": "^7.1.0",
         "stylelint-config-standard": "^38.0.0",
@@ -171,7 +171,7 @@
         "vite-tsconfig-paths": "^5.1.4",
         "vue-cropper": "^1.1.4",
         "vue-eslint-parser": "^10.2.0",
-        "vue-tsc": "^3.0.1"
+        "vue-tsc": "^3.0.2"
     },
     "peerDependencies": {
         "@tiptap/starter-kit": "2.26.1",
