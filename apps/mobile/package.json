@@ -23,7 +23,7 @@
         "@intlify/unplugin-vue-i18n": "^6.0.8",
         "@tailwindcss/vite": "^4.1.11",
         "@types/node": "^24.1.0",
-        "@vitejs/plugin-vue": "^6.0.0",
+        "@vitejs/plugin-vue": "^6.0.1",
         "@vitejs/plugin-vue-jsx": "^5.0.1",
         "tailwindcss": "^4.1.11",
         "typescript": "^5.8.3",
