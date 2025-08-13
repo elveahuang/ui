@@ -25,7 +25,6 @@ export default defineConfig(async ({ command, mode }) => {
         resolve: {
             alias: {
                 '~vant': 'vant',
-                '~video.js': 'video.js',
             },
         },
         plugins: [

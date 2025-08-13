@@ -1,4 +1,3 @@
-import videoJs from 'video.js';
 import { IPlayerOptions, IPluginOptions, Sniffer } from 'xgplayer';
 import Thumbnail from 'xgplayer/es/plugins/common/thumbnail';
 import CssFullScreen from 'xgplayer/es/plugins/cssFullScreen';
@@ -22,78 +21,6 @@ import Stats from 'xgplayer/es/plugins/stats';
 import TestSpeed from 'xgplayer/es/plugins/testspeed';
 import Time from 'xgplayer/es/plugins/time';
 import Volume from 'xgplayer/es/plugins/volume';
-
-/**
- * VPlayer
- * https://videojs.com/
- */
-export interface VPlayerSource {
-    src?: string;
-    type?: string;
-}
-
-export interface VPlayerOptions {
-    debug?: boolean;
-    autoplay?: boolean;
-    controls?: boolean;
-    src?: string;
-    sources?: VPlayerSource[];
-    youtube?: {
-        enabled: boolean;
-    };
-    disablePictureInPicture?: boolean;
-}
-
-export const VPlayerButton = videoJs.getComponent('Button');
-
-export class VPlayerFullScreenBtn extends VPlayerButton {
-    isFullscreen: boolean = false;
-
-    constructor(player: any, options: object) {
-        super(player, options);
-        this.setIcon('fullscreen-enter');
-    }
-
-    buildCSSClass(): string {
-        return `vjs-fullscreen-control ${super.buildCSSClass()}`;
-    }
-
-    handleClick(): void {
-        this.isFullscreen = !this.isFullscreen;
-        if (this.isFullscreen) {
-            this.setIcon('fullscreen-exit');
-            this.player_.el_.classList.add('app-video-player-fullscreen');
-        } else {
-            this.setIcon('fullscreen-enter');
-            this.player_.el_.classList.remove('app-video-player-fullscreen');
-        }
-    }
-
-    toggleFullScreen() {
-        if (this.isFullscreen) {
-            // document.exitFullscreen().then();
-        } else {
-            this.player_.el_.requestFullscreen().then((): void => {
-                this.isFullscreen = !this.isFullscreen;
-            });
-        }
-    }
-}
-
-export const getVPlayerOptions = (options: VPlayerOptions = {}, isEnableYoutube?: boolean): VPlayerOptions => {
-    return {
-        ...({
-            responsive: true,
-            autoplay: true,
-            controls: true,
-            enableSmoothSeeking: true,
-            disablePictureInPicture: true,
-            src: options.src,
-            sources: [{ src: options.src, type: isEnableYoutube ? 'video/youtube' : 'video/mp4' }],
-        } as VPlayerOptions),
-        ...options,
-    } as VPlayerOptions;
-};
 
 /**
  * XPlayer

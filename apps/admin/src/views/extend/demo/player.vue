@@ -3,17 +3,11 @@
         <div class="m-6" style="height: 300px; max-height: 300px">
             <app-player :options="options" />
         </div>
-        <div class="m-6" style="height: 300px; max-height: 300px">
-            <x-player :options="options" />
-        </div>
-        <div class="m-6" style="height: 300px; max-height: 300px">
-            <v-player :options="options" />
-        </div>
     </div>
 </template>
 
 <script setup lang="ts">
-import { AppPlayer, VPlayer, XPlayer } from '@commons/core/components';
+import { AppPlayer } from '@commons/core/components';
 import { log } from '@commons/core/utils';
 import { onMounted, ref } from 'vue';
 

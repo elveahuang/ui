@@ -65,7 +65,7 @@
         "unplugin-icons": "^22.2.0",
         "unplugin-vue-components": "^29.0.0",
         "vue-loader": "^17.4.2",
-        "webpack": "^5.101.0"
+        "webpack": "^5.101.1"
     },
     "peerDependencies": {
         "@vitejs/plugin-vue": "4.6.2",
