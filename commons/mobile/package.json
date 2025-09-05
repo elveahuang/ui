@@ -2,7 +2,7 @@
     "name": "@commons/mobile",
     "version": "25.1.0",
     "dependencies": {
-        "tailwindcss": "^4.1.12",
-        "vue": "^3.5.20"
+        "tailwindcss": "^4.1.13",
+        "vue": "^3.5.21"
     }
 }
