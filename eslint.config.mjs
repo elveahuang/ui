@@ -1,19 +1,20 @@
 import eslintParser from '@typescript-eslint/parser';
 import vuePrettier from '@vue/eslint-config-prettier';
+import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript';
 import vuePlugin from 'eslint-plugin-vue';
+import { globalIgnores } from 'eslint/config';
 import globals from 'globals';
 import eslintTypescript from 'typescript-eslint';
 import vueParser from 'vue-eslint-parser';
 
-/** @type {import('eslint').Config} */
-export default [
-    ...eslintTypescript.configs.recommended,
-    ...vuePlugin.configs['flat/essential'],
+export default defineConfigWithVueTs(
+    globalIgnores(['**/node_modules/', '**/dist/']),
+    eslintTypescript.configs.recommended,
+    vuePlugin.configs['flat/essential'],
+    vueTsConfigs.recommended,
     vuePrettier,
     {
-        ignores: ['**/node_modules/', '**/dist/'],
-    },
-    {
+        files: ['*.vue', '**/*.vue'],
         languageOptions: {
             parser: vueParser,
             parserOptions: {
@@ -51,4 +52,4 @@ export default [
             'no-async-promise-executor': 'off',
         },
     },
-];
+);
