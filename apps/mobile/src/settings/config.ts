@@ -3,7 +3,7 @@ import { Config } from '@commons/core/settings/mobile';
 
 export const config: Config = {
     app: {
-        logo: logo,
+        logo,
         login: {
             success: '/',
         },

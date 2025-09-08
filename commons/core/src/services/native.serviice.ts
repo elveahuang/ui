@@ -22,21 +22,21 @@ class NativeService {
      * 判断当前是否是运行在原生苹果设备
      */
     isIos(): boolean {
-        return 'ios' === Capacitor.getPlatform();
+        return Capacitor.getPlatform() === 'ios';
     }
 
     /**
      * 判断当前是否是运行在原生安卓设备
      */
     isAndroid(): boolean {
-        return 'android' === Capacitor.getPlatform();
+        return Capacitor.getPlatform() === 'android';
     }
 
     /**
      * 判断当前是否是运行在浏览器
      */
     isWeb(): boolean {
-        return 'web' === Capacitor.getPlatform();
+        return Capacitor.getPlatform() === 'web';
     }
 
     async config() {

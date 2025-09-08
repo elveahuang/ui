@@ -26,7 +26,7 @@ import { Notice } from '@commons/core/types/notice.ts';
 const props = defineProps({ items: Array<Notice> });
 
 const gotoDetailPage = (id: number) => {
-    router.push({ path: '/notifications/details', query: { id: id } });
+    router.push({ path: '/notifications/details', query: { id } });
 };
 </script>
 

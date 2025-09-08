@@ -45,7 +45,7 @@ export const setupApp = async (app: App, routerConfig?: RouterConfig, i18nConfig
     await setupRouter(app, routerConfig).then();
     // 设置网络请求
     await setupHttp({
-        toast: toast,
+        toast,
         excludes: ['/oauth/token'],
     } as HttpConfig).then();
     // 设置全局指令

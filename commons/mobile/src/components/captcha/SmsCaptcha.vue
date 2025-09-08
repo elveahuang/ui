@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { getCodeCaptchaApi } from '@commons/core/api/captcha.ts';
+import { getCodeCaptchaApi } from '@commons/core/api/captcha';
 import { log } from '@commons/core/utils';
 import { onMounted, Ref, ref } from 'vue';
 

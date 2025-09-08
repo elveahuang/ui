@@ -46,7 +46,7 @@
 import { ref } from 'vue';
 
 const props = defineProps({
-    //图片存储在oss上的上级目录名
+    // 图片存储在oss上的上级目录名
     imgType: {
         type: String,
         default: '',
@@ -75,12 +75,12 @@ const props = defineProps({
     options: {
         type: Object,
         default: {
-            img: '', //裁剪图片的地址
-            autoCrop: true, //是否默认生成截图框
-            autoCropWidth: 200, //默认生成截图框宽度
-            autoCropHeight: 200, //默认生成截图框高度
-            fixedBox: true, //是否固定截图框大小 不允许改变
-            previewsCircle: false, //预览图是否是原圆形
+            img: '', // 裁剪图片的地址
+            autoCrop: true, // 是否默认生成截图框
+            autoCropWidth: 200, // 默认生成截图框宽度
+            autoCropHeight: 200, // 默认生成截图框高度
+            fixedBox: true, // 是否固定截图框大小 不允许改变
+            previewsCircle: false, // 预览图是否是原圆形
             title: '修改图片',
         },
     },
@@ -101,7 +101,7 @@ const edit = (record) => {
     this.visible = true;
     this.options = Object.assign({}, this.options, record);
 };
-/*export default {
+/* export default {
     props: ,
     mounted() {},
     data() {
@@ -173,5 +173,5 @@ const edit = (record) => {
             return new File([u8arr], filename, { type: mime });
         },
     },
-};*/
+}; */
 </script>

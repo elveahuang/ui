@@ -20,6 +20,7 @@ export class PageResponse<T = any> {
         pageNumber?: number;
         pageSize?: number;
     };
+
     last?: boolean;
 }
 

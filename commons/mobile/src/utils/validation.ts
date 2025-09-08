@@ -10,7 +10,7 @@ export const PasswordValidator: FieldRuleValidator = async (value: string): Prom
 export const EmailValidator: FieldRuleValidator = async (value: string): Promise<boolean> => {
     if (isValidEmail(value)) {
         const result: R<boolean> = await checkEmailApi({ email: value, id: 0 });
-        if (result.code == '200' && result.data === true) {
+        if (result.code === '200' && result.data === true) {
             return Promise.resolve(true);
         }
     }
@@ -20,7 +20,7 @@ export const EmailValidator: FieldRuleValidator = async (value: string): Promise
 export const UsernameValidator: FieldRuleValidator = async (value: string): Promise<boolean> => {
     if (isValidUsername(value)) {
         const result: R<boolean> = await checkUsernameApi({ username: value, id: 0 });
-        if (result.code == '200' && result.data === true) {
+        if (result.code === '200' && result.data === true) {
             return Promise.resolve(true);
         }
     }

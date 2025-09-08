@@ -185,7 +185,7 @@ const handleFormShow = async (id?: number) => {
     formRef.value?.clearValidate();
     if (id && id > 0) {
         formModalTitle.value = t('common.announcement_pages_edit_title');
-        await announcementDetailsApi({ id: id }).then((result) => {
+        await announcementDetailsApi({ id }).then((result) => {
             Object.assign(formModel, { ...result.data });
         });
     } else {
@@ -216,7 +216,7 @@ const handleDelete = async (id: number = 0): Promise<void> => {
         showMessage({ message: t('common.label_please_select_one_record') }).then();
         return;
     }
-    announcementDeleteApi({ ids: ids }).then((result) => {
+    announcementDeleteApi({ ids }).then((result) => {
         if (result.code == '200') {
             formModalOpen.value = false;
             tableRef.value.refresh();

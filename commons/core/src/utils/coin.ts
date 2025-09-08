@@ -82,7 +82,7 @@ export const convertStringToCiphertext = (string: string, number: number, start:
     return startString + star + endString;
 };
 
-//动态文本颜色
+// 动态文本颜色
 export const getClassByValue = (value: number, standard: number) => {
     if (value > standard) {
         return '!text-green-500';

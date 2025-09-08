@@ -9,7 +9,6 @@ class CoreService {
         PlatformService.initialize().then(() => {
             log('PlatformService initialize successfully.');
         });
-        return;
     }
 }
 

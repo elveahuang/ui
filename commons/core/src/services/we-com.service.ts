@@ -81,7 +81,7 @@ class WeComService {
     async getSignature(url: string): Promise<R<WeChatSignatureApiResult>> {
         log(`WeComService getSignature...`);
         return await getWeComSignatureApi({
-            url: url,
+            url,
         });
     }
 

@@ -44,7 +44,7 @@ const getCaptcha = async (): Promise<void> => {
                 disabled.value = false;
                 clearInterval(timer);
             } else {
-                text.value = t('common.field_captcha_tip', { time: time });
+                text.value = t('common.field_captcha_tip', { time });
             }
         }, 1000);
     });

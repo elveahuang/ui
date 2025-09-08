@@ -14,6 +14,7 @@ export class DataList {
         size: 10,
         total: 0,
     };
+
     items: any[] = [];
 }
 
@@ -57,8 +58,8 @@ export const handleParams = (dataList: DataList): PageParams => {
 
 export const useDataList = () => {
     return {
-        initialize: initialize,
-        handleResult: handleResult,
-        handleParams: handleParams,
+        initialize,
+        handleResult,
+        handleParams,
     };
 };

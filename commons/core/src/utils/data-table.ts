@@ -24,6 +24,7 @@ export class DataTable<T = any> {
         size: 10,
         total: 0,
     };
+
     sort: {
         property?: string;
         order?: string;
@@ -31,6 +32,7 @@ export class DataTable<T = any> {
         property: '',
         order: '',
     };
+
     columns: any[] = [];
     items: T[] = [];
 }
@@ -44,6 +46,7 @@ export class DataTableOptions {
         page: 1,
         size: 10,
     };
+
     sort?: {
         property?: string;
         order?: string;
@@ -96,7 +99,7 @@ export const handleResult = <T>(dataTable: DataTable, result: R<PageResult<T>>, 
         }
     }
     Object.assign(dataTable, {
-        items: items,
+        items,
         pagination: {
             page: result?.data?.pageable?.pageNumber + 1,
             size: result?.data?.pageable?.pageSize,
@@ -123,7 +126,7 @@ export const setLoadingStatus = (dataTable: DataTable, loading: boolean = false)
     return {
         ...dataTable,
         ...{
-            loading: loading,
+            loading,
         },
     };
 };
@@ -135,9 +138,9 @@ export const useDataTable = (): {
     handleParams: (dataTable: DataTable) => PageParams;
 } => {
     return {
-        initialize: initialize,
-        setLoadingStatus: setLoadingStatus,
-        handleResult: handleResult,
-        handleParams: handleParams,
+        initialize,
+        setLoadingStatus,
+        handleResult,
+        handleParams,
     };
 };

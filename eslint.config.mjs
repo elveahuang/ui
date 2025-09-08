@@ -1,6 +1,5 @@
 import eslintParser from '@typescript-eslint/parser';
 import vuePrettier from '@vue/eslint-config-prettier';
-import { vueTsConfigs } from '@vue/eslint-config-typescript';
 import vuePlugin from 'eslint-plugin-vue';
 import globals from 'globals';
 import eslintTypescript from 'typescript-eslint';
@@ -10,7 +9,6 @@ import vueParser from 'vue-eslint-parser';
 export default [
     ...eslintTypescript.configs.recommended,
     ...vuePlugin.configs['flat/essential'],
-    vueTsConfigs.recommended,
     vuePrettier,
     {
         ignores: ['**/node_modules/', '**/dist/'],
@@ -45,6 +43,7 @@ export default [
             '@typescript-eslint/no-var-requires': 'off',
             '@typescript-eslint/no-unsafe-function-type': 'off',
             '@typescript-eslint/no-empty-object-type': 'off',
+            '@typescript-eslint/no-unused-expressions': 'off',
             'vue/multi-word-component-names': 'off',
             'vue/require-valid-default-prop': 'off',
             'vue/no-mutating-props': 'off',

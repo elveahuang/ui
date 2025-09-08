@@ -150,7 +150,7 @@ const uploadHandle = async (event: any) => {
     }
     AttachmentApi.upload(formData)
         .then((res) => {
-            event.onSuccess(res, event.file); //上传成功监听事件
+            event.onSuccess(res, event.file); // 上传成功监听事件
 
             attachment.fileList = fileList.value.map((file: any) => {
                 return {
@@ -162,7 +162,7 @@ const uploadHandle = async (event: any) => {
             emits('update:attachment', { ...attachment });
         })
         .catch((err) => {
-            event.onError(err, err, event.file); //上传失败监听事件,onError 第二个参数要是字符串才能显示错误原因
+            event.onError(err, err, event.file); // 上传失败监听事件,onError 第二个参数要是字符串才能显示错误原因
             message.error(event.file.name + err);
         });
 };

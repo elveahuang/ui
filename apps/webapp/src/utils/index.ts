@@ -9,7 +9,7 @@ import { App } from 'vue';
 
 export const setup = async (app: App): Promise<void> => {
     log(`App for webapp initialize...`);
-    await setupApp(app, { routes: routes, base: env.router.base, mode: env.router.mode }, {}, initializeApp);
+    await setupApp(app, { routes, base: env.router.base, mode: env.router.mode }, {}, initializeApp);
 };
 
 export const initializeApp = async (app: App): Promise<any> => {

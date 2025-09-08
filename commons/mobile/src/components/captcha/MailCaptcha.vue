@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { getEmailCaptchaApi } from '@commons/core/api/captcha.ts';
+import { getEmailCaptchaApi } from '@commons/core/api/captcha';
 import { log } from '@commons/core/utils';
 import { isEmpty } from 'es-toolkit/compat';
 import { showDialog } from 'vant';

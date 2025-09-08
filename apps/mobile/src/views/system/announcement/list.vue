@@ -14,7 +14,6 @@ import { announcementListApi } from '@commons/core/api/home/announcement';
 import { goBack, log } from '@commons/core/utils';
 import { useDataList } from '@commons/core/utils/data-list';
 import { DataList } from '@commons/mobile/components';
-import { onMounted, reactive } from 'vue';
 
 const { initialize, handleResult, handleParams } = useDataList();
 const model = reactive(initialize());

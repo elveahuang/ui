@@ -15,7 +15,7 @@ class BrowserService {
     async open(url: string, onFinished: () => void, onLoaded: () => void): Promise<void> {
         if (Capacitor.isNativePlatform()) {
             await Browser.open({
-                url: url,
+                url,
             });
             await Browser.addListener('browserFinished', onFinished);
             await Browser.addListener('browserPageLoaded', onLoaded);

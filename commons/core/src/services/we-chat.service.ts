@@ -61,7 +61,7 @@ class WeChatService {
     async getSignature(url: string): Promise<R<WeChatSignatureApiResult>> {
         log(`WeChatService getSignature...`);
         return await getWeChatSignatureApi({
-            url: url,
+            url,
         });
     }
 

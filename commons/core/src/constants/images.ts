@@ -16,15 +16,15 @@ import unlike from '../assets/images/unlike.svg';
 export { avatar, banner, bannerBlue, bannerGreen, bannerRed, favicon, like, logo, poster_1, poster_2, poster_3, poster_4, unlike };
 
 export default {
-    favicon: favicon,
-    avatar: avatar,
-    banner: banner,
-    logo: logo,
-    loginBg: loginBg,
-    like: like,
-    unlike: unlike,
-    poster_1: poster_1,
-    poster_2: poster_2,
-    poster_3: poster_3,
-    poster_4: poster_4,
+    favicon,
+    avatar,
+    banner,
+    logo,
+    loginBg,
+    like,
+    unlike,
+    poster_1,
+    poster_2,
+    poster_3,
+    poster_4,
 };

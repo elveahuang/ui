@@ -14,7 +14,6 @@ import { noticeListApi } from '@commons/core/api/home/notice';
 import { goBack, log } from '@commons/core/utils';
 import { useDataList } from '@commons/core/utils/data-list';
 import { DataList } from '@commons/mobile/components';
-import { onMounted, reactive } from 'vue';
 
 const { initialize, handleResult, handleParams } = useDataList();
 const model = reactive(initialize());
@@ -25,6 +24,6 @@ const getDataList = async () => {
 };
 
 onMounted(() => {
-    log('Page <<NoticeIndexPage>> mounted.');
+    log('Page <<MessageIndexPage>> mounted.');
 });
 </script>

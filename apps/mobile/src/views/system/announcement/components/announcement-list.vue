@@ -20,6 +20,6 @@ import { AppDivider } from '@commons/mobile/components';
 const props = defineProps({ items: Array<Announcement> });
 
 const gotoDetailPage = (id: number | string) => {
-    router.push({ path: '/announcement/details', query: { id: id } });
+    router.push({ path: '/announcement/details', query: { id } });
 };
 </script>

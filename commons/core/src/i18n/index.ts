@@ -54,7 +54,7 @@ export const createI18nOptions = async (): Promise<I18nOptions> => {
         sync: true,
         legacy: false,
         allowComposition: true,
-        locale: locale,
+        locale,
         fallbackLocale: locale,
         messages: {
             [locale]: await loadMessages(locale),

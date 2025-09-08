@@ -19,7 +19,7 @@ const props = defineProps({
 });
 
 let player: Player = null;
-let playerRef = ref<HTMLVideoElement>();
+const playerRef = ref<HTMLVideoElement>();
 /**
  * 初始化播放器
  */

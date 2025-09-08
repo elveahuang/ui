@@ -43,6 +43,7 @@ export default defineConfig(async ({ command, mode }) => {
                 dts: resolve(__dirname, 'src/types/components.d.ts'),
             }),
             AutoImport({
+                imports: ['vue', 'vue-router'],
                 resolvers: [VantResolver()],
                 dts: resolve(__dirname, 'src/types/auto-imports.d.ts'),
             }),

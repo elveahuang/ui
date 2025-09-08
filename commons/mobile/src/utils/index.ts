@@ -53,7 +53,7 @@ export const showConfirm = (options: DialogOptions, confirmCallback?: Function, 
 export const toast = async (message: any): Promise<void> => {
     showMessage({
         width: '80%',
-        message: message,
+        message,
         theme: 'round-button',
     });
 };
@@ -72,7 +72,7 @@ export const setupApp = async (app: App, routerConfig?: RouterConfig, i18nConfig
     await setupRouter(app, routerConfig);
     // 设置网络请求
     await setupHttp({
-        toast: toast,
+        toast,
         excludes: ['/oauth/token'],
     } as HttpConfig);
     // 设置全局指令

@@ -14,6 +14,6 @@ export class AttachmentApi {
      * upload
      */
     static upload(formData: FormData, headers: any = {}): Promise<R> {
-        return post<R>(this.UPLOAD_FILE_URL, formData, { headers: headers });
+        return post<R>(this.UPLOAD_FILE_URL, formData, { headers });
     }
 }
