@@ -37,7 +37,7 @@
         "@tarojs/runtime": "^4.1.6",
         "@tarojs/shared": "^4.1.6",
         "@tarojs/taro": "^4.1.6",
-        "axios": "^1.11.0",
+        "axios": "^1.12.2",
         "es-toolkit": "^1.39.10",
         "pinia": "^3.0.3",
         "vue": "^3.5.21",
@@ -62,7 +62,7 @@
         "tsconfig-paths-webpack-plugin": "^4.2.0",
         "typescript": "^5.9.2",
         "unplugin-auto-import": "^20.1.0",
-        "unplugin-icons": "^22.2.0",
+        "unplugin-icons": "^22.3.0",
         "unplugin-vue-components": "^29.0.0",
         "vue-loader": "^17.4.2",
         "webpack": "^5.101.3"
@@ -72,5 +72,5 @@
         "@vitejs/plugin-vue-jsx": "3.1.0",
         "vite": "4.5.14"
     },
-    "packageManager": "pnpm@10.15.1"
+    "packageManager": "pnpm@10.16.1"
 }
