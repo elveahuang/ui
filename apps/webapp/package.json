@@ -3,10 +3,10 @@
     "version": "25.1.0",
     "private": true,
     "scripts": {
-        "start:dev": "vite --mode development",
-        "start:pro": "vite --mode production",
-        "build:dev": "vite build --mode development",
-        "build:pro": "vite build --mode production"
+        "start:dev": "vite --mode dev",
+        "start:pro": "vite --mode pro",
+        "build:dev": "vite build --mode dev",
+        "build:pro": "vite build --mode pro"
     },
     "dependencies": {
         "vue": "^3.5.21"

@@ -4,13 +4,13 @@
     "private": true,
     "scripts": {
         "start:app": "vite --mode app",
-        "start:dev": "vite --mode development",
-        "start:pro": "vite --mode production",
+        "start:dev": "vite --mode dev",
+        "start:pro": "vite --mode pro",
         "build:app": "vite build --mode app",
-        "build:dev": "vite build --mode development",
-        "build:pro": "vite build --mode production",
-        "sync": "cap sync android",
-        "assets": "pnpx @capacitor/assets generate"
+        "build:dev": "vite build --mode dev",
+        "build:pro": "vite build --mode pro",
+        "sync": "npx cap sync android",
+        "assets": "npx @capacitor/assets generate --android"
     },
     "dependencies": {
         "vue": "^3.5.21"
