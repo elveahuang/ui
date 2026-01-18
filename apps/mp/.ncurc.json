@@ -1,0 +1,3 @@
+{
+    "reject": ["vite", "@vitejs/plugin-vue", "@vitejs/plugin-vue-jsx"]
+}

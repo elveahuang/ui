@@ -1,0 +1,19 @@
+packages:
+    - apps/*
+    - commons/*
+    - docs
+
+onlyBuiltDependencies:
+    - '@capacitor/background-runner'
+    - '@parcel/watcher'
+    - '@swc/core'
+    - '@tailwindcss/oxide'
+    - '@tarojs/binding'
+    - '@tarojs/cli'
+    - core-js
+    - core-js-pure
+    - es5-ext
+    - esbuild
+    - sharp
+    - unrs-resolver
+    - vue-demi

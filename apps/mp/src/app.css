@@ -1,0 +1,5 @@
+@import '@nutui/nutui-taro/dist/style.css';
+
+.text-center {
+    text-align: center;
+}

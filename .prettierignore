@@ -1,0 +1,7 @@
+dist
+apps/admin/src/types/*
+apps/mobile/src/types/*
+apps/mobile/android
+apps/mp/src/types/*
+apps/webapp/src/types/*
+components.d.ts
