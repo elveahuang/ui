@@ -1,0 +1,35 @@
+import { defineNuxtConfig } from 'nuxt/config';
+import { resolve } from 'path';
+
+export default defineNuxtConfig({
+    compatibilityDate: '2025-07-15',
+    modules: ['@nuxt/content', '@nuxt/fonts', '@nuxt/icon', '@nuxt/image', '@nuxt/ui'],
+    devtools: { enabled: true },
+    css: [resolve(__dirname, 'app/assets/css/main.css')],
+    content: {
+        database: {
+            type: 'postgresql',
+            url: process.env.POSTGRES_URL as string,
+        },
+    },
+    fonts: {
+        provider: 'bunny',
+    },
+    sourcemap: { client: 'hidden' },
+    ssr: true,
+    icon: {
+        serverBundle: {
+            collections: ['mdi'],
+        },
+    },
+    vite: {
+        optimizeDeps: {
+            include: [],
+        },
+    },
+    nitro: {
+        prerender: {
+            crawlLinks: false,
+        },
+    },
+});

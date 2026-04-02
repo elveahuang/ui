@@ -1,0 +1,24 @@
+packages:
+  - apps/*
+  - packages/*
+
+onlyBuiltDependencies:
+  - '@capacitor/background-runner'
+  - '@parcel/watcher'
+  - '@prisma/client'
+  - '@prisma/engines'
+  - '@swc/core'
+  - '@tarojs/binding'
+  - '@tarojs/cli'
+  - agent-browser
+  - better-sqlite3
+  - canvas
+  - core-js
+  - core-js-pure
+  - es5-ext
+  - esbuild
+  - less
+  - prisma
+  - sharp
+  - unrs-resolver
+  - vue-demi

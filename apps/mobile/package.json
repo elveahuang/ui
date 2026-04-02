@@ -1,0 +1,47 @@
+{
+    "name": "@apps/mobile",
+    "version": "26.1.0",
+    "private": true,
+    "scripts": {
+        "start:app": "vite --mode app",
+        "start:dev": "vite --mode dev",
+        "start:pro": "vite --mode pro",
+        "build:app": "vite build --mode app",
+        "build:dev": "vite build --mode dev",
+        "build:pro": "vite build --mode pro",
+        "sync": "npx cap sync android",
+        "assets": "npx @capacitor/assets generate --android"
+    },
+    "dependencies": {
+        "@capacitor/android": "^8.3.0",
+        "@capacitor/app": "^8.1.0",
+        "@capacitor/browser": "^8.0.3",
+        "@capacitor/camera": "^8.0.2",
+        "@capacitor/core": "^8.3.0",
+        "@capacitor/device": "^8.0.2",
+        "@capacitor/ios": "^8.3.0",
+        "@capacitor/splash-screen": "^8.0.1",
+        "@capacitor/status-bar": "^8.0.2",
+        "vue": "^3.5.31"
+    },
+    "devDependencies": {
+        "@capacitor/android": "^8.3.0",
+        "@capacitor/assets": "^3.0.5",
+        "@capacitor/cli": "^8.3.0",
+        "@capacitor/ios": "^8.3.0",
+        "@commons/config": "workspace:*",
+        "@intlify/unplugin-vue-i18n": "^11.0.7",
+        "@tailwindcss/vite": "^4.2.2",
+        "@types/node": "^25.5.0",
+        "@vant/auto-import-resolver": "^1.3.0",
+        "@vitejs/plugin-vue": "^6.0.5",
+        "@vitejs/plugin-vue-jsx": "^5.1.5",
+        "rollup-plugin-copy": "^3.5.0",
+        "tailwindcss": "^4.2.2",
+        "typescript": "^6.0.2",
+        "unplugin-auto-import": "^21.0.0",
+        "unplugin-icons": "^23.0.1",
+        "unplugin-vue-components": "^32.0.0",
+        "vite": "^8.0.3"
+    }
+}
