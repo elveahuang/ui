@@ -37,8 +37,8 @@ jobs:
             - name: Executing Remote SSH Commands
               uses: appleboy/ssh-action@v1.0.3
               with:
-                  host: ${{ secrets.TENCENT_SERVER_USER }}
-                  username: ${{ secrets.TENCENT_SERVER_KEY }}
-                  key: ${{ secrets.SERVER_KEY }}
+                  host: ${{ secrets.TENCENT_SERVER_HOST }}
+                  username: ${{ secrets.TENCENT_SERVER_USER }}
+                  key: ${{ secrets.TENCENT_SERVER_KEY }}
                   script: |
                       sh /data/tools/deploy-ui.sh
