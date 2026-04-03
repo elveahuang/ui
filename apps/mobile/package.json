@@ -22,7 +22,7 @@
         "@capacitor/ios": "^8.3.0",
         "@capacitor/splash-screen": "^8.0.1",
         "@capacitor/status-bar": "^8.0.2",
-        "vue": "^3.5.31"
+        "vue": "^3.5.32"
     },
     "devDependencies": {
         "@capacitor/android": "^8.3.0",
