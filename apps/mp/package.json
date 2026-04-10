@@ -37,11 +37,11 @@
         "@tarojs/runtime": "^4.1.11",
         "@tarojs/shared": "^4.1.11",
         "@tarojs/taro": "^4.1.11",
-        "axios": "^1.14.0",
+        "axios": "^1.15.0",
         "es-toolkit": "^1.45.1",
         "pinia": "^3.0.4",
         "vue": "^3.5.32",
-        "vue-i18n": "^11.3.1",
+        "vue-i18n": "^11.3.2",
         "vue-router": "^5.0.4"
     },
     "devDependencies": {
@@ -58,7 +58,7 @@
         "@vue/compiler-sfc": "^3.5.32",
         "babel-preset-taro": "^4.1.11",
         "css-loader": "^7.1.4",
-        "postcss": "^8.5.8",
+        "postcss": "^8.5.9",
         "style-loader": "^4.0.0",
         "tsconfig-paths-webpack-plugin": "^4.2.0",
         "typescript": "^6.0.2",
