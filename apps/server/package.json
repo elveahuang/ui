@@ -7,7 +7,9 @@
         "build": "nuxt build",
         "dev": "nuxt dev",
         "generate": "nuxt generate",
-        "preview": "nuxt preview"
+        "preview": "nuxt preview",
+        "generate": "nuxt db generate",
+        "migrate": "nuxt db migrate"
     },
     "dependencies": {
         "@ai-sdk/deepseek": "^2.0.29",

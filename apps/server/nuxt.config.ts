@@ -22,7 +22,9 @@ export default defineNuxtConfig({
             collections: ['mdi'],
         },
     },
-    hub: {},
+    hub: {
+        db: 'postgresql',
+    },
     vite: {
         optimizeDeps: {
             include: [],

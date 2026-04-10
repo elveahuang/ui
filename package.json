@@ -5,6 +5,8 @@
     "scripts": {
         "start:server:dev": "pnpm run --filter @apps/server dev",
         "start:server:pro": "pnpm run --filter @apps/server dev",
+        "start:server:generate": "pnpm run --filter @apps/server generate",
+        "start:server:migrate": "pnpm run --filter @apps/server migrate",
         "build:server:dev": "pnpm run --filter @apps/server build",
         "build:server:pro": "pnpm run --filter @apps/server build",
         "start:admin:dev": "pnpm --filter @apps/admin start:dev",
@@ -81,7 +83,7 @@
         "crypto-js": "^4.2.0",
         "dayjs": "^1.11.20",
         "echarts": "^6.0.0",
-        "element-plus": "^2.13.6",
+        "element-plus": "^2.13.7",
         "es-toolkit": "^1.45.1",
         "jose": "^6.2.2",
         "leafer-ui": "^2.0.8",
