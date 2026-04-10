@@ -3,7 +3,7 @@ import { resolve } from 'path';
 
 export default defineNuxtConfig({
     compatibilityDate: '2026-04-01',
-    modules: ['@nuxt/content', '@nuxt/fonts', '@nuxt/icon', '@nuxt/image', '@nuxt/ui', '@comark/nuxt'],
+    modules: ['@nuxt/content', '@nuxt/fonts', '@nuxt/icon', '@nuxt/image', '@nuxt/ui', '@comark/nuxt', '@nuxthub/core'],
     devtools: { enabled: true },
     css: [resolve(__dirname, 'app/assets/css/main.css')],
     content: {
@@ -22,6 +22,7 @@ export default defineNuxtConfig({
             collections: ['mdi'],
         },
     },
+    hub: {},
     vite: {
         optimizeDeps: {
             include: [],
