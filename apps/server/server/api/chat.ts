@@ -1,9 +1,18 @@
-import { db } from '@nuxthub/db';
-import { H3Event } from 'h3';
+import { createDeepSeek, type DeepSeekProvider } from '@ai-sdk/deepseek';
+import { convertToModelMessages, streamText } from 'ai';
 
-export default defineEventHandler(async (event: H3Event<EventHandlerRequest>) => {
-    return {
-        message: text(),
-        items: await db.query.users.findMany(),
-    };
+export default defineLazyEventHandler(async () => {
+    console.log(useRuntimeConfig().deepseekApiKey);
+    const deepSeek: DeepSeekProvider = createDeepSeek({
+        apiKey: useRuntimeConfig().deepseekApiKey,
+    });
+    return defineEventHandler(async (event: any) => {
+        const { messages } = await readBody(event);
+        console.log('messages', messages);
+        const result = streamText({
+            model: deepSeek('deepseek-chat'),
+            messages: await convertToModelMessages(messages),
+        });
+        return result.toUIMessageStreamResponse();
+    });
 });
