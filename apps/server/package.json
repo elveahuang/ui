@@ -14,7 +14,7 @@
         "@ai-sdk/deepseek": "^2.0.29",
         "@ai-sdk/openai": "^3.0.53",
         "@ai-sdk/vue": "^3.0.161",
-        "@better-auth/core": "^1.6.3",
+        "@better-auth/core": "^1.6.4",
         "@comark/html": "^0.2.1",
         "@comark/nuxt": "^0.2.1",
         "@comark/vue": "^0.2.1",
