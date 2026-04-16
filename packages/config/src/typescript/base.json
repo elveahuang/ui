@@ -5,7 +5,7 @@
         "module": "ESNext",
         "jsx": "preserve",
         "lib": ["ESNext", "DOM"],
-        "moduleResolution": "Node",
+        "moduleResolution": "node",
         "noEmit": true,
         "strict": true,
         "allowJs": true,

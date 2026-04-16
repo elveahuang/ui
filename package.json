@@ -33,7 +33,7 @@
         "stylelint": "stylelint './**/*.{css}' --fix"
     },
     "dependencies": {
-        "@ai-sdk/vue": "^3.0.161",
+        "@ai-sdk/vue": "^3.0.164",
         "@capacitor/app-launcher": "^8.0.1",
         "@capacitor/background-runner": "^3.0.0",
         "@capacitor/barcode-scanner": "^3.0.2",
@@ -67,14 +67,13 @@
         "@tanstack/vue-query": "^5.99.0",
         "@tanstack/vue-table": "^8.21.3",
         "@tanstack/vue-virtual": "^3.13.23",
-        "@tiptap/starter-kit": "^2.27.2",
-        "@tiptap/vue-3": "^2.27.2",
+        "@tiptap/starter-kit": "^3.22.3",
+        "@tiptap/vue-3": "^3.22.3",
         "@vant/icons": "^3.0.2",
         "@vant/popperjs": "^1.3.0",
         "@vant/touch-emulator": "^1.5.0",
         "@vueuse/core": "^14.2.1",
-        "ai": "^6.0.161",
-        "aieditor": "^1.4.2",
+        "ai": "^6.0.164",
         "async-validator": "^4.2.5",
         "axios": "^1.15.0",
         "classnames": "^2.5.1",
@@ -144,17 +143,10 @@
         "typescript-plugin-css-modules": "^5.2.0",
         "vue-eslint-parser": "^10.4.0"
     },
-    "peerDependencies": {
-        "@tiptap/core": "2.27.2",
-        "@tiptap/extension-bubble-menu": "2.27.2",
-        "@tiptap/extension-code-block": "2.27.2",
-        "@tiptap/extension-code-block-lowlight": "2.27.2",
-        "@tiptap/extension-floating-menu": "2.27.2",
-        "@tiptap/extension-text-style": "2.27.2",
-        "@tiptap/pm": "2.27.2",
-        "@tiptap/starter-kit": "2.27.2",
-        "@tiptap/suggestion": "2.27.2",
-        "@tiptap/vue-3": "2.27.2"
+    "pnpm": {
+        "overrides": {
+            "unimport": "5.6.0"
+        }
     },
     "packageManager": "pnpm@10.33.0"
 }

@@ -12,8 +12,6 @@ import { Locale } from '@commons/core/utils/locale';
 import { isEqual } from 'es-toolkit/compat';
 import Quill from 'quill';
 import { QuillOptions } from 'quill/core/quill';
-import 'quill/dist/quill.core.css';
-import 'quill/dist/quill.snow.css';
 import { computed, onBeforeUnmount, onMounted, ref, shallowRef, watch } from 'vue';
 
 const emits = defineEmits(['update:value']);
