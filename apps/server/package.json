@@ -11,6 +11,7 @@
         "migrate": "nuxt db migrate"
     },
     "dependencies": {
+        "@a2ui/web_core": "^0.9.1",
         "@ai-sdk/deepseek": "^2.0.29",
         "@ai-sdk/openai": "^3.0.53",
         "@ai-sdk/vue": "^3.0.168",
