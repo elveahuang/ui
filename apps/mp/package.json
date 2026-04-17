@@ -61,7 +61,7 @@
         "postcss": "^8.5.10",
         "style-loader": "^4.0.0",
         "tsconfig-paths-webpack-plugin": "^4.2.0",
-        "typescript": "^6.0.2",
+        "typescript": "^6.0.3",
         "unplugin-auto-import": "^21.0.0",
         "unplugin-icons": "^23.0.1",
         "unplugin-vue-components": "^32.0.0",

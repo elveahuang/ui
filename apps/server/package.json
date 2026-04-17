@@ -13,7 +13,7 @@
     "dependencies": {
         "@ai-sdk/deepseek": "^2.0.29",
         "@ai-sdk/openai": "^3.0.53",
-        "@ai-sdk/vue": "^3.0.164",
+        "@ai-sdk/vue": "^3.0.168",
         "@better-auth/core": "^1.6.5",
         "@comark/html": "^0.2.1",
         "@comark/nuxt": "^0.2.1",
@@ -31,7 +31,7 @@
         "@tiptap/pm": "^3.22.3",
         "@tiptap/starter-kit": "^3.22.3",
         "@tiptap/vue-3": "^3.22.3",
-        "ai": "^6.0.164",
+        "ai": "^6.0.168",
         "comark": "^0.2.1",
         "drizzle-orm": "^0.45.2",
         "drizzle-zod": "^0.8.3",
@@ -48,7 +48,7 @@
         "@tailwindcss/vite": "^4.2.2",
         "@types/pg": "^8.20.0",
         "drizzle-kit": "^0.31.10",
-        "typescript": "^6.0.2",
+        "typescript": "^6.0.3",
         "vite": "^8.0.8"
     }
 }

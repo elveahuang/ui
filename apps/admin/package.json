@@ -20,7 +20,7 @@
         "@vitejs/plugin-vue-jsx": "^5.1.5",
         "rollup-plugin-copy": "^3.5.0",
         "tailwindcss": "^4.2.2",
-        "typescript": "^6.0.2",
+        "typescript": "^6.0.3",
         "unplugin-auto-import": "^21.0.0",
         "unplugin-icons": "^23.0.1",
         "unplugin-vue-components": "^32.0.0",
