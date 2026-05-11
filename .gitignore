@@ -1,0 +1,12 @@
+.idea
+.nuxt
+**/.nuxt
+node_modules
+**/node_modules
+dist
+temp
+**/dist
+.output
+**/.output
+
+apps/server/.data
