@@ -37,12 +37,12 @@
         "@tarojs/runtime": "^4.2.0",
         "@tarojs/shared": "^4.2.0",
         "@tarojs/taro": "^4.2.0",
-        "axios": "^1.16.0",
+        "axios": "^1.16.1",
         "es-toolkit": "^1.46.1",
         "pinia": "^3.0.4",
         "vue": "^3.5.34",
-        "vue-i18n": "^11.4.2",
-        "vue-router": "^5.0.6"
+        "vue-i18n": "^11.4.4",
+        "vue-router": "^5.0.7"
     },
     "devDependencies": {
         "@babel/core": "^7.29.0",
@@ -58,7 +58,7 @@
         "@vue/compiler-sfc": "^3.5.34",
         "babel-preset-taro": "^4.2.0",
         "css-loader": "^7.1.4",
-        "postcss": "^8.5.14",
+        "postcss": "^8.5.15",
         "style-loader": "^4.0.0",
         "tsconfig-paths-webpack-plugin": "^4.2.0",
         "typescript": "^6.0.3",
@@ -74,5 +74,5 @@
         "vite": "4.5.14",
         "webpack": "5.91.0"
     },
-    "packageManager": "pnpm@11.0.9"
+    "packageManager": "pnpm@11.1.3"
 }
