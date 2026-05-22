@@ -64,7 +64,7 @@
         "typescript": "^6.0.3",
         "unplugin-auto-import": "^21.0.0",
         "unplugin-icons": "^23.0.1",
-        "unplugin-vue-components": "^32.0.0",
+        "unplugin-vue-components": "^32.1.0",
         "vue-loader": "^17.4.2",
         "webpack": "5.91.0"
     },
@@ -74,5 +74,5 @@
         "vite": "4.5.14",
         "webpack": "5.91.0"
     },
-    "packageManager": "pnpm@11.1.3"
+    "packageManager": "pnpm@11.2.2"
 }
