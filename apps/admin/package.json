@@ -9,7 +9,7 @@
         "build:pro": "vite build --mode pro"
     },
     "dependencies": {
-        "vue": "^3.5.34"
+        "vue": "^3.5.35"
     },
     "devDependencies": {
         "@commons/config": "workspace:*",
@@ -24,6 +24,6 @@
         "unplugin-auto-import": "^21.0.0",
         "unplugin-icons": "^23.0.1",
         "unplugin-vue-components": "^32.1.0",
-        "vite": "^8.0.14"
+        "vite": "^8.0.16"
     }
 }

@@ -3,7 +3,7 @@
     "version": "26.1.0",
     "dependencies": {
         "tailwindcss": "^4.3.0",
-        "vue": "^3.5.34"
+        "vue": "^3.5.35"
     },
     "devDependencies": {
         "@commons/config": "workspace:*"

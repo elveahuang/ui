@@ -13,13 +13,13 @@
     "dependencies": {
         "@a2ui/web_core": "^0.10.0",
         "@ai-sdk/deepseek": "^2.0.35",
-        "@ai-sdk/openai": "^3.0.65",
-        "@ai-sdk/vue": "^3.0.190",
-        "@better-auth/core": "^1.6.11",
+        "@ai-sdk/openai": "^3.0.67",
+        "@ai-sdk/vue": "^3.0.193",
+        "@better-auth/core": "^1.6.13",
         "@comark/html": "^0.3.1",
         "@comark/nuxt": "^0.3.1",
         "@comark/vue": "^0.3.1",
-        "@electric-sql/pglite": "^0.4.5",
+        "@electric-sql/pglite": "^0.4.6",
         "@iconify-json/mdi": "^1.2.3",
         "@json-render/core": "^0.19.0",
         "@json-render/vue": "^0.19.0",
@@ -28,12 +28,12 @@
         "@nuxt/fonts": "^0.14.0",
         "@nuxt/icon": "^2.2.2",
         "@nuxt/image": "^2.0.0",
-        "@nuxt/ui": "^4.8.0",
+        "@nuxt/ui": "^4.8.1",
         "@nuxthub/core": "^0.10.7",
-        "@tiptap/pm": "^3.23.6",
-        "@tiptap/starter-kit": "^3.23.6",
-        "@tiptap/vue-3": "^3.23.6",
-        "ai": "^6.0.190",
+        "@tiptap/pm": "^3.24.0",
+        "@tiptap/starter-kit": "^3.24.0",
+        "@tiptap/vue-3": "^3.24.0",
+        "ai": "^6.0.193",
         "comark": "^0.3.2",
         "drizzle-orm": "^0.45.2",
         "drizzle-zod": "^0.8.3",
@@ -51,6 +51,6 @@
         "@types/pg": "^8.20.0",
         "drizzle-kit": "^0.31.10",
         "typescript": "^6.0.3",
-        "vite": "^8.0.14"
+        "vite": "^8.0.16"
     }
 }
